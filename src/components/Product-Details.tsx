@@ -33,7 +33,7 @@ export function ProductDemo() {
             Learning was never so sexy!
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-        Code, earn, and learn at your own pace. We'll handle the complicated stuff.
+        Code, earn, and learn at your own pace. We&apos;ll handle the complicated stuff.
         </p>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-[#273E47] min-h-[500px] lg:min-h-[400px] xl:min-h-[300px]">

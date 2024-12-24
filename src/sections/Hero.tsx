@@ -30,7 +30,7 @@ export const Hero = () => {
             Skills Sharp, Wallet Empty?
             </h1>
             <p className="text-xl text-[#3e1601] dark:text-white/80 tracking-tight mt-6">
-              Every achievement grows your stake. This isn't just education. This is your future, incentivized.
+              Every achievement grows your stake. This isn&apos;t just education. This is your future, incentivized.
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
               <MainButton content={"Get Started"} />
