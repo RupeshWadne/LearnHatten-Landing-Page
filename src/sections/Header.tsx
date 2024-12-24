@@ -1,10 +1,8 @@
 "use client";
 
 import ArrowRight from "@/assets/arrow-right.svg";
-import Logo from "@/assets/logoimage.png";
 import LHlogo from "@/assets/learnhatten.png"
 import Image from "next/image";
-import MenuIcon from "@/assets/menu.svg";
 import ThemeToggle from "@/components/Toggle";
 import { useState } from "react";
 

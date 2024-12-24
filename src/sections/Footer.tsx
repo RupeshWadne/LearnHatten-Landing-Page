@@ -1,5 +1,4 @@
 import Image from "next/image";
-import logo from "@/assets/logoimage.png";
 import X from "@/assets/social-x.svg";
 import Insta from "@/assets/social-insta.svg";
 import Linkedin from "@/assets/social-linkedin.svg";

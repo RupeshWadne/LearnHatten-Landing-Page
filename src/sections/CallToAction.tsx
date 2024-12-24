@@ -1,8 +1,5 @@
 "use client"
-import Image from "next/image";
-import CTA1 from "@/assets/CTA1.png";
 import CTA2 from "@/assets/CTA2.png";
-import ArrowRight from "@/assets/arrow-right.svg"
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import MainButton from "@/components/MainButton"

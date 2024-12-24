@@ -53,7 +53,7 @@ const pricingTiers = [
   },
 ];
 
-export const Pricing = () => {
+export const Features = () => {
   return (
     <section className="py-24 bg-white dark:bg-[#0A0D14]">
       <div className="container">

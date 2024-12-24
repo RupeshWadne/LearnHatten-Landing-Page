@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import calendarImage from "@/assets/calender-3d.png";
 import cogImage from "@/assets/cog2.png";
 import { motion, useScroll, useTransform } from "framer-motion";
