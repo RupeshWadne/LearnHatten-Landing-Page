@@ -15,57 +15,57 @@ import React from "react";
 
 const testimonials = [
   {
-    text: "Started as a complete beginner, and within 3 months I launched my first DApp. The token rewards kept me going, but landing a blockchain developer role was the real win.",
+    text: `"The automation has saved us countless hours, allowing our team to focus on strategic initiatives rather than repetitive tasks. I can't imagine managing our finances without it! sAI has become an indispensable part of our workflow and enhancing our overall productivity."`,
     name: "Emma Chen",
-    username: "Software Engineer",
+    username: "Chief Financial Officer",
     imageSrc: avatar1.src,
   },
   {
-    text: "The structured approach to Web3 concepts is brilliant. Moving through the beginner track gave me rock-solid foundations, and the rewards made every lesson exciting.",
+    text: `"Implementing sAI was one of the best decisions we've made. The real-time insights have been invaluable for our strategic planning, and the ease of use has made onboarding our team a breeze!"`,
     name: "Alex Rodriguez",
-    username: "Frontend Developer",
+    username: "VP of Finance",
     imageSrc: avatar2.src,
   },
   {
-    text: "Transitioning from Web2 felt intimidating until I found this platform. The practical projects and reward system made learning Web3 actually enjoyable.",
+    text: `"We were able to tailor it specifically to fit our unique business needs, ensuring that every aspect aligned with our financial processes. This level of personalization has not only streamlined our operations but also resulted in extraordinary time savings, allowing our team to allocate more resources toward strategic initiatives and growth."`,
     name: "Marcus Johnson",
-    username: "Blockchain Developer",
+    username: "Budget Manager",
     imageSrc: avatar3.src,
   },
   {
-    text: "The advanced track challenged me in all the right ways. Building real DeFi protocols while earning tokens was incredibly motivating. Now I'm actively contributing to major blockchain projects.",
+    text: `"Our team has seen a 50% reduction in the time spent on financial reporting since we started using sAI. Its intuitive, efficient, and has made our workflow so much smoother!"`,
     name: "Ryan Thompson",
-    username: "Smart Contract Developer",
+    username: "Operations Manager",
     imageSrc: avatar4.src,
   },
   {
-    text: "Found my sweet spot between learning and earning. Each module adds both knowledge and tokens to your wallet. The project-based approach makes everything stick.",
+    text: `“sAI has been a game-changer for us. The real-time reporting feature allows us to make informed decisions quickly, and the accuracy has significantly reduced our financial discrepancies! We can confidently navigate complex financial landscapes and respond to challenges as they arise.”`,
     name: "Sophia Patel",
-    username: "Game Developer",
+    username: "Finance Director",
     imageSrc: avatar5.src,
   },
   {
-    text: "Skeptical at first, but this platform delivers. Solid curriculum, practical code examples, and a fair reward system. My entire dev team is now on board.",
+    text: `"Since implementing sAI, our cash flow management has become so much more efficient. The insights are actionable and have greatly improved our financial goals."`,
     name: "Jessica Liu",
-    username: "Technical Lead",
+    username: "Finance Lead",
     imageSrc: avatar6.src,
   },
   {
-    text: "Procrastinated learning Solidity for months until I found this platform. The beginner track and token incentives made it engaging. Currently building my first NFT project!",
+    text: `“With sAI, we have reduced our operational costs by 30%. The integration with our existing systems was seamless, and the support team has been fantastic! sAI has truly transformed our financial operations!”`,
     name: "David Martinez",
-    username: "Game Developer",
+    username: "Chief Operating Officer",
     imageSrc: avatar7.src,
   },
   {
-    text: "The security-focused modules in the intermediate track are outstanding. Each lesson translates directly to real-world applications. The rewards are just a bonus.",
+    text: `"sAI has not only improved our reporting speed but also the quality of our financial insights. We can now make data-driven decisions confidently! The enhanced clarity of information has empowered our team to identify new growth opportunities."`,
     name: "Olivia Nakamura",
-    username: "Security Engineer",
+    username: "Financial Controller",
     imageSrc: avatar8.src,
   },
   {
-    text: "From gas optimization to zero-knowledge proofs, every advanced concept is well-explained. The reward system pushed me through challenging topics.",
+    text: `“Our financial team can now focus on higher-level strategic planning rather than getting bogged down by routine tasks and manual processes, leading to more impactful decision-making and improved business outcomes."`,
     name: "Carlos Gomez",
-    username: "AI/ML Engineer",
+    username: "Vice President of Finance",
     imageSrc: avatar9.src,
   },
 ];
@@ -103,7 +103,7 @@ const TestimonialColumn = (props: {
                   height={40}
                   className="h-10 w-10 rounded-full"
                 />
-                <div className="flex flex-col">
+                <div className="flex flex-col uppercase text-xs">
                   <div className="font-medium tracking-tight leading-5">
                     {name}
                   </div>
@@ -120,15 +120,15 @@ const TestimonialColumn = (props: {
 
 export const Testimonials = () => {
   return (
-    <section className="bg-white dark:bg-[#0A0D14]">
+    <section className="bg-[#f5f7fa] dark:bg-[#111]">
       <div className="container">
         <div className="flex justify-center">
           <div className="tag">Testimonials</div>
         </div>
         <div className="max-w-[540px] mx-auto">
-          <h2 className="section-title mt-5">Hear From Our Top Performers</h2>
+          <h2 className="section-title mt-5">Why customers love sAI</h2>
           <p className="section-description mt-5">
-            The Student Experience Straight From the Source.
+            Hear from our top customers, what they feel about sAI?
           </p>
         </div>
         <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[738px] overflow-hidden">

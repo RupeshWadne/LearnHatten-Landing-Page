@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
-      <body className={twMerge(poppins.className, "antialiased bg-[#EAEEFE] dark:bg-[#0A0D14]")}>
+      <body className={twMerge(poppins.className, "antialiased bg-[#c3cfe2] dark:bg-[#111]")}>
         {children}
       </body>
     </html>

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 @layer components {
   .btn {
     @apply px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center;
@@ -10,7 +12,7 @@
     @apply bg-black text-white;
   }
   .btn-text {
-    @apply bg-transparent text-black dark:text-white;
+    @apply hover:bg-white/50 py-2 dark:hover:bg-black/50 text-black dark:text-white duration-200 ease-in-out;
   }
   .logo-tecker-image {
     @apply h-28 md:h-32 w-auto dark:invert;
@@ -21,14 +23,20 @@
   }
 
   .section-title {
-    @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black dark:from-white dark:to-[#EAA266] to-[#EAA266] text-transparent bg-clip-text;
+    @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-normal tracking-tighter bg-gradient-to-b from-[#362417] dark:from-[#fff6ccf6] dark:to-[#fff] to-[#555] text-transparent bg-clip-text;
   }
 
   .section-description {
-    @apply text-center text-[18px] dark:text-white leading-[25px] tracking-tight;
+    @apply text-center text-sm md:text-[18px] dark:text-white leading-[25px] tracking-tight;
   }
 
-  .card{
-    @apply p-10 border dark:border-[#F1F1F1] border-black rounded-3xl dark:shadow-[5px_5px_0px_#EAEAEA] shadow-[5px_5px_0px_#555] max-w-xs w-full;
+  .card {
+    @apply p-10 border dark:border-[#F1F1F1] border-black rounded-3xl dark:shadow-none shadow-[5px_5px_0px_#555] max-w-xs w-full text-sm;
+  }
+
+  .heading-hero {
+    font-family: "Dancing Script";
+    font-weight: 400;
+    font-style: normal;
   }
 }

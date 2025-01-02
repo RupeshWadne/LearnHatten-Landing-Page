@@ -1,18 +1,19 @@
 "use client";
 
 import ArrowRight from "@/assets/arrow-right.svg";
-import LHlogo from "@/assets/learnhatten.png"
+import SAASlogo from "@/assets/sAI2.png";
 import Image from "next/image";
 import ThemeToggle from "@/components/Toggle";
 import { useState } from "react";
+import MainButton from "@/components/MainButton";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   console.log(isOpen);
 
   return (
-    <header className="sticky top-0 backdrop-blur-sm z-20">
-      <div className="flex items-center justify-center py-3 bg-black dark:bg-white/80 dark:text-black text-white text-sm gap-3">
+    <header className="sticky top-0 bg-transparent z-20">
+      {/* <div className="flex items-center justify-center py-3 bg-black dark:bg-white/80 dark:text-black text-white text-sm gap-3">
         <p className="text-white/60 dark:text-black hidden md:block">
           Work smarter, not harder. Start your free trial today!
         </p>
@@ -20,15 +21,19 @@ export const Header = () => {
           <p>See how it works</p>
           <ArrowRight className="h-4 w-4 inline-flex items-center justify-center" />
         </div>
-      </div>
+      </div> */}
       <div className="py-5">
         <div className="container">
-          <div className="flex items-center justify-between">
-          <div className="inline-flex relative before:content-[''] before:top-2 before:bottom-0 before:blur before:w-full before:bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FD8FE)] before:absolute">
-            <Image className="invert dark:invert-0" src={LHlogo} alt="Saas Logo" height={45} width={45} />
-            </div>
+          <div className="flex items-center justify-between border border-black/20 dark:border-white/20 rounded-2xl pr-3 pl-1 backdrop-blur-sm bg-opacity-25 bg-[#f1f1f1]">
+            <Image
+              className="z-20"
+              src={SAASlogo}
+              alt="Saas Logo"
+              height={60}
+              width={60}
+            />
             <div className="block md:hidden">
-            <ThemeToggle />
+              <ThemeToggle />
             </div>
             <label className="flex flex-col gap-2 w-8 md:hidden">
               <input
@@ -42,31 +47,25 @@ export const Header = () => {
               <div className="rounded-2xl h-[3px] w-1/2 bg-black dark:bg-white duration-500 place-self-end peer-checked:rotate-[225deg] origin-left peer-checked:translate-x-[12px] peer-checked:translate-y-[1px]"></div>
             </label>
             <nav className="hidden md:flex items-center text-black/60 dark:text-white/60 gap-6 font-semibold">
-              <a href="#">About</a>
-              <a href="#">Features</a>
-              <a href="#">Community</a>
-              <a href="#">Updates</a>
-              <a href="#">Help</a>
-              <button className="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center">
-                Get for free
-              </button>
-              <ThemeToggle />
+              <a href="#features">Features</a>
+              <a href="#pricing">Pricing</a>
+              <a href="#community">Community</a>
             </nav>
+            <div className="hidden md:flex items-center gap-2">
+              <ThemeToggle />
+              <MainButton content={"GET STARTED"} />
+            </div>
           </div>
         </div>
       </div>
       {isOpen && (
         <div className="bg-black w-screen h-screen max-w-screen-sm text-white duration-500 absolute flex p-6 md:hidden">
           <nav className="items-start underline flex flex-col gap-6 font-semibold text-2xl">
-              <a href="#">About</a>
-              <a href="#">Features</a>
-              <a href="#">Customers</a>
-              <a href="#">Updates</a>
-              <a href="#">Help</a>
-              <button className="bg-white text-black px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center">
-                Get for free
-              </button>
-            </nav>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#community">Community</a>
+            <MainButton content={"GET STARTED"} />
+          </nav>
         </div>
       )}
     </header>

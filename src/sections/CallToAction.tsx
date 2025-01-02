@@ -1,11 +1,10 @@
-"use client"
-import CTA2 from "@/assets/CTA2.png";
+"use client";
+import CTA2 from "@/assets/sAI-3d-4.png";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import MainButton from "@/components/MainButton"
+import MainButton from "@/components/MainButton";
 
 export const CallToAction = () => {
-
   const sectionRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -15,17 +14,28 @@ export const CallToAction = () => {
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
   return (
-    <div ref={sectionRef} className="bg-gradient-to-b from-white dark:from-[#0A0D14] dark:to-[#413a35] to-[#EDD5C1] py-24 overflow-x-clip">
+    <div
+      id="community"
+      ref={sectionRef}
+      className="bg-gradient-to-b from-[#f5f7fa] dark:from-[#111] dark:to-[#434343] to-[#c3cfe2] py-24 overflow-x-clip"
+    >
       <div className="container">
         <div className="max-w-[540px] mx-auto relative">
-          <h2 className="section-title">Stop losing money while learning
-          join us</h2>
-          <p className="section-description mt-5">
-           Learn new skills and earn simultaneously. Join our Discord community now for exclusive opportunities and a supportive learning environment.
-          </p>
-          <motion.img style={{
+          <h2 className="section-title">
+            Become part of our Financial Revolution
+          </h2>
+          {/* <p className="section-description mt-5">
+            Expert help anytime you need!
+          </p> */}
+          <motion.img
+            style={{
               translateY,
-            }} src={CTA2.src} alt="3d Icon" width={360} className="absolute -left-[350px] -top-[137px] rotate-[20deg]" />
+            }}
+            src={CTA2.src}
+            alt="3d Icon"
+            width={360}
+            className="absolute -left-[350px] -top-[137px] rotate-[20deg]"
+          />
           {/* <motion.img style={{
               translateY,
             }} src={CTA1.src} alt="3d Icon" width={330} className="absolute -right-[331px] -top-[19px] -rotate-12" /> */}
