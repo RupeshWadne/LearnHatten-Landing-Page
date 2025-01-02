@@ -9,8 +9,8 @@ const poppins = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Learnhatten Landing Page",
-  description: "Earn crypto tby learning crypto",
+  title: "sAI Platform",
+  description: "Your personal finance expert",
 };
 
 export default function RootLayout({
